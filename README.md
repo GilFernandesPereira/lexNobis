@@ -26,6 +26,10 @@ Caso a insituição já tenha criado a sua conta, basta iniciar sessão.
 
 ![Screenshot 9](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/web-login.png)
 
+Caso ainda não tenha conta, basta pressionar no botão "Criar uma conta" e de seguida será direcionado para uma nova página.
+
+![Screenshot 10](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/web-%20criar%20conta.png)
+
 ---
 
 ### Aplicação para as Instituições
