@@ -18,5 +18,5 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
 
 De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se uma lista com todos os passos que devem ser efetuados.
 
-## Aplicação para as Instituições
+#### Aplicação para as Instituições
 
