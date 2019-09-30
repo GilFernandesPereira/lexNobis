@@ -59,6 +59,6 @@ Após terminar a transferência, será necessário abrir o ficheiro transferido 
 Após a sua instalação, a instiutição já pode utilizar a aplicação.
 ![Screenshot 8](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Apresenta%C3%A7%C3%A3o.png)
 
-
-
 ---
+
+### Aplicação para os Seniores
