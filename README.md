@@ -23,8 +23,10 @@ De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se
 Através do seu telemóvel, aceda a um dos browsers para realizar uma pesquisa na Internet.
 ![Screenshot 1](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/browsers.png)
 
-De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexNobis" no motor de busca, tal como na figura a baixo.
+De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexNobis" no motor de busca, tal como nas figuras a baixo.
 
 ![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google.png)
+
+![Screenshot 3](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/motor%20de%20busca.png)
 
 ---
