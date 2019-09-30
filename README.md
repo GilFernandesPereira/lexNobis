@@ -18,6 +18,16 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
 
 De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se uma lista com todos os passos que devem ser efetuados.
 
+### Plataforma Web para as Instituições
+
+Todas as instituições poderão utilizar a plataforma web através do seguinte URL: "https://lexnobis.000webhostapp.com/lexNobis%20-%20Web/lexNobis/Api/views/index.html". 
+
+Caso a insituição já tenha criado a sua conta, basta iniciar sessão.
+
+![Screenshot 9](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/web-login.png)
+
+---
+
 ### Aplicação para as Instituições
 
 Através do seu telemóvel, aceda a um dos browsers para realizar uma pesquisa na Internet.
@@ -43,7 +53,7 @@ Após terminar a transferência, será necessário abrir o ficheiro transferido 
 ![Screenshot 7](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/insituicao_instalacao_aviso.png)
 
 Após a sua instalação, a instiutição já pode utilizar a aplicação.
-![Screenshot 7](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Apresenta%C3%A7%C3%A3o.png)
+![Screenshot 8](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Apresenta%C3%A7%C3%A3o.png)
 
 
 
