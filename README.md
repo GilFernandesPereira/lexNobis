@@ -15,5 +15,5 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
  
   	GUIA PARA INSTALAÇÃO DAS PLATAFORMAS
 
-De forma a usufruir das apps e da plataforma lexNobis, segue-se uma lista com todos os passos que devem ser efetuados.
+De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se uma lista com todos os passos que devem ser efetuados.
 
