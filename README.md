@@ -27,6 +27,4 @@ De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexN
 
 ![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google.png)
 
-![Screenshot 3](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/motor%20de%20busca.png)
-
 ---
