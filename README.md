@@ -14,7 +14,7 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
    
  A lista anterior, inclui as atividades de envelhecimento ativo que as instituições promovem de forma a melhorar a qualidade de vida das pessoas à medida que estas vão envelhecendo. As atividades de envelhecimento ativo também são uma forma de fazer com que as pessoas socializem e interajam entre si, sendo, por isso, uma forma de combater a solidão. Portanto, ao disponibilizar uma ferramenta para as instituições promoverem este tipo de atividades, envolvendo as pessoas que são mais suscetíveis de sofrer de solidão, estamos a combater a solidão.
  
-  	GUIA PARA INSTALAÇÃO DAS PLATAFORMAS
+  	GUIA PARA A INSTALAÇÃO DAS PLATAFORMAS
 
 De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se uma lista com todos os passos que devem ser efetuados.
 
