@@ -27,4 +27,17 @@ De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexN
 
 ![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google%20e%20Motor%20de%20Busca.png)
 
+Após realizar a pesquisa, será direcionado para a página. Quando o carragemento da página terminar, pressione o botão "View code". Será encaminhado para a pasta do projeto.
+![Screenshot 3](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/homePage_Github.png)
+
+Quando a página que contém a pasta do projeto carregar por completo, pressione o botão "lexNobis-Instituição".
+![Screenshot 4](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/InsidePastaGithub_Instituicao.png)
+
+Como é possível visualizar na figura seguinte, dentro da pasta "lexNobis-Instituição" encontra-se o APK que irá permitir instalar a aplicação nas insituições. Para tal é necessário pressionar o botão "app-debug.apk".
+![Screenshot 5](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/InsidePastaGithub_Instituicao.png)
+
+De seguida, basta pressionar o botão "Download". Após pressionar o botão será exibido um aviso. Estas aplicações foram desenhadas e estruturadas para não danificar nenhum dispositivo. Para começar a transferir basta pressionar o botão "OK".
+![Screenshot 6](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/download_aviso_instituicao.png)
+
+
 ---
