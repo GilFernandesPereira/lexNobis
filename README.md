@@ -6,11 +6,11 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
 
  	OBJECTIVOS
  A principal motivação deste projeto é a melhoria da qualidade de vida das pessoas, a quem a simples companhia de outra pessoa pode ter um grande impacto na qualidade da sua vida. É especialmente direcionado a pessoas com mais de 60 anos que vivam sozinhas ou isoladas. Este projeto tem como principal objetivo ajudar as instituições que estão no terreno e lidam com estas pessoas, disponibilizando uma ferramenta que para auxiliar a gestão e execução de atividades de combate à solidão. Estas atividades visam a redução da solidão ou do isolamento social, a melhoria das relações sociais através de atividades sociais, a estimulação de competências sociais e pessoais, resumindo, a melhoria da qualidade de vida. Apresentam-se alguns exemplos de atividades com estes objetivos:
-   •	Fazer companhia, escutando e conversando;
-   •	Facilitar a comunicação entre amigos, vizinhos, familiares e entidades.
-   •	Leitura e interpretação de correspondência e de documentos em geral;
-   •	Atividades lúdicas, culturais e informativas, tais como, dinamização de jogos, leitura de jornais e revistas;
-   •	Execução de pequenas tarefas, incluindo compras, recados, marcação de consultas ou acompanhamento aos serviços de saúde.
+   *	Fazer companhia, escutando e conversando;
+   *	Facilitar a comunicação entre amigos, vizinhos, familiares e entidades.
+   *	Leitura e interpretação de correspondência e de documentos em geral;
+   *	Atividades lúdicas, culturais e informativas, tais como, dinamização de jogos, leitura de jornais e revistas;
+   *	Execução de pequenas tarefas, incluindo compras, recados, marcação de consultas ou acompanhamento aos serviços de saúde.
  A lista anterior, inclui as atividades de envelhecimento ativo que as instituições promovem de forma a melhorar a qualidade de vida das pessoas à medida que estas vão envelhecendo. As atividades de envelhecimento ativo também são uma forma de fazer com que as pessoas socializem e interajam entre si, sendo, por isso, uma forma de combater a solidão. Portanto, ao disponibilizar uma ferramenta para as instituições promoverem este tipo de atividades, envolvendo as pessoas que são mais suscetíveis de sofrer de solidão, estamos a combater a solidão.
  
   	GUIA PARA INSTALAÇÃO DAS PLATAFORMAS
