@@ -39,5 +39,8 @@ Como é possível visualizar na figura seguinte, dentro da pasta "lexNobis-Insti
 De seguida, basta pressionar o botão "Download". Após pressionar o botão será exibido um aviso. Estas aplicações foram desenhadas e estruturadas para não danificar nenhum dispositivo. Para começar a transferir basta pressionar o botão "OK".
 ![Screenshot 6](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/download%2Baviso_instituicao.png)
 
+Após terminar a transferência, será necessário abrir o ficheiro transferido para proceder à sua instalação. Tendo em conta que o telemóvel não conhece a fonte de onde foi descarregado o ficheiro, será exibido um aviso (ver figura a baixo). Terá então que carregar no botão "Definições" e de seguida, ativar o botão "Origens desconhecidas".
+![Screenshot 7](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/insituicao_instalacao_aviso.png)
+
 
 ---
