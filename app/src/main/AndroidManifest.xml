@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gifpe.projetosolidao10933">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Views.Ativar_conta" />
+        <activity android:name=".Views.Agendar_Encontro" />
+        <activity android:name=".Views.Listar_Encontros" />
+        <activity android:name=".Views.Listar_Itens_Encontros" />
+        <activity android:name=".Views.confirmacaoAgendarEncontro" />
+        <activity android:name=".Views.Menu_Paciente" />
+        <activity android:name=".Views.Ativar_Conta_Codigo" />
+        <activity android:name=".Views.Apresentacao">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Views.Questionario"></activity>
+    </application>
+
+</manifest>

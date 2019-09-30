@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azulPrincipal"
+    tools:context=".Views.Ativar_Conta_Codigo">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/azulPrincipal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="139dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/teamwork" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="416dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/branco"
+            android:text="Aguarde pelo codigo que lhe foi enviado.."
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="113dp"
+            android:gravity="center"
+            android:text="Foi lhe enviado um codigo que será detectado automaticamente mas, caso não seja, pode introduzir manualmente."
+            android:textColor="@color/branco"
+            android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/etCodigoAtivarEditar"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:background="@color/branco"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/etCodigoAtivar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_codigo_de_ativacao"
+                android:enabled="true"
+                android:hint=" Introduza o Codigo "
+                android:inputType="textEmailAddress"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/etCodigoAtivarEditar"/>
+
+        <Button
+            android:id="@+id/btnAtivaConta"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="313dp"
+            android:background="@drawable/background_create_account"
+            android:text="Ativar Conta"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+</RelativeLayout>
+
+</LinearLayout>

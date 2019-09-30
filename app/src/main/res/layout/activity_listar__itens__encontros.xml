@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulPrincipal"
+    tools:context=".Views.Listar_Itens_Encontros">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivData"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/dataicon" />
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="81dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:text="2018/09/18"
+            android:textColor="@color/branco" />
+
+        <ImageView
+            android:id="@+id/ivHora"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/relogioicon" />
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="67dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="25dp"
+            android:text="18:00h"
+            android:textColor="@color/branco" />
+
+        <ImageView
+            android:id="@+id/ivEstado"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/openicon" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="81dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="25dp"
+            android:text="Em aberto"
+            android:textColor="@color/branco" />
+
+        <TextView
+            android:id="@+id/tvVerifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Responder ao questionário!"
+            android:textColor="@color/branco"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
