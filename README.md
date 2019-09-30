@@ -25,6 +25,6 @@ Através do seu telemóvel, aceda a um dos browsers para realizar uma pesquisa n
 
 De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexNobis" no motor de busca, tal como nas figuras a baixo.
 
-![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google.png)
+![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google%20e%20Motor%20de%20Busca.png)
 
 ---
