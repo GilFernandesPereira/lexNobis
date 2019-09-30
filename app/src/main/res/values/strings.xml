@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">lexNobis-Instituição</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="my_text">Ao continuar está a aceitar os Nossos <u>Termos
+       e Condições</u> e a <u>Política de Privacidade</u></string>
+    <string name="google_maps_key">AIzaSyAwnghYR3FmCB3jXPpc5COHpoz8Mih7WA4</string>
+    <string-array name="genero">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="estadoCivil">
+        <item>Solteiro/a</item>
+        <item>Casado/a</item>
+        <item>Viúvo/a</item>
+    </string-array>
+</resources>

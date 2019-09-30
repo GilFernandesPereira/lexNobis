@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".Views.CriarConta">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:background="#266DD3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="139dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/teamwork" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#266DD3">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_utilizador"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:drawableTint="#434345"
+                android:hint="Password"
+                android:inputType="text"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Falta Acrescentar o Tipo de Instituição. -->
+        <!-- Nome empresa Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etNomeEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_empresa"
+                android:hint="Nome da Institução"
+                android:inputType="text"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Morada Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="191dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etMorada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_morada"
+                android:hint="Morada"
+                android:inputType="text"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Codigo-Postal Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="252dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etCodigoPostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_codigopostal"
+                android:hint="Código-Postal"
+                android:inputType="text"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCriarConta"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="321dp"
+            android:background="@drawable/background_creat_account"
+            android:text="Criar Conta"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressbarCriar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/my_text"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Já tens conta? Login"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/perfilWidget"
+    android:background="@color/azulPrincipal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/azulPrincipal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="139dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/teamwork" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnAddSolitario"
+            style="@android:style/Widget.Button"
+            android:layout_width="268dp"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="223dp"
+            android:background="@drawable/background_creat_account"
+            android:drawableBottom="@drawable/ic_action_adduser"
+            android:text="Adicionar Colaborador"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAddVoluntario"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawableBottom="@drawable/ic_action_adduser"
+            android:layout_marginBottom="202dp"
+            android:background="@drawable/background_creat_account"
+            android:text="Adicionar Voluntário"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnListarVoluntario"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="129dp"
+            android:background="@drawable/background_creat_account"
+            android:drawableBottom="@drawable/ic_action_listusers"
+            android:text="Listar Voluntário"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnListarSeniores"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/background_creat_account"
+            android:drawableBottom="@drawable/ic_action_listusers"
+            android:text="Listar Seniores"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

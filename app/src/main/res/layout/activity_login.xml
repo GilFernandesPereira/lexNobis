@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#266DD3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="154dp"
+            android:layout_height="95dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/teamwork" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#266DD3">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="#FFFF"
+            android:textColorHint="#434345">
+
+            <EditText
+                android:id="@+id/etUtilizador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_utilizador"
+                android:drawableTint="#434345"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#434345"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:background="#FFFF"
+            android:textColorHint="#434345"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:drawableStart="@drawable/ic_action_pass"
+                android:drawableTint="#434345"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_creat_account"
+            android:text="Login"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCriarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="149dp"
+            android:text="Ou"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_text"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+        <Button
+            android:id="@+id/btnCria"
+            style="@android:style/Widget.Button"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/background_creat_account"
+            android:text="Criar uma conta nova"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azulPrincipal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/azulPrincipal">
+
+        <ImageView
+            android:id="@+id/imgVoluntario"
+            android:layout_width="112dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/ic_action_utilizador" />
+
+        <Button
+            android:id="@+id/btnUploadFotoVoluntario"
+            style="@android:style/Widget.Button"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/background_creat_account"
+            android:text="Carregar Foto"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Nome Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/branco"
+                android:layout_marginBottom="-73dp">
+
+                <EditText
+                    android:id="@+id/etNomeVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_utilizador"
+                    android:hint="Nome"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- NrTelemovel Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/branco"
+                android:layout_marginTop="73dp">
+
+                <EditText
+                    android:id="@+id/etNrTelemovelVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_nrtelemovel"
+                    android:hint="Nrº Telemóvel"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Nif Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/branco"
+                android:layout_marginTop="146dp">
+
+                <EditText
+                    android:id="@+id/etNifVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_nif"
+                    android:hint="Nif"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Data de Nascimento Label +73-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="134dp"
+                android:background="@color/branco"
+                android:layout_marginTop="219dp">
+
+                <EditText
+                    android:id="@+id/etDataNascimentoVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_datanascimento"
+                    android:hint="Data de Nascimento"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/branco"
+                android:layout_marginTop="292dp">
+
+                <Spinner
+                    android:id="@+id/spGeneroVoluntario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_action_genero" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Morada Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/branco"
+                android:layout_marginTop="345dp">
+
+                <EditText
+                    android:id="@+id/etMoradaVoluntario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_morada"
+                    android:hint="Morada"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnAddVoluntario"
+                style="@android:style/Widget.Button"
+                android:layout_width="265dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/background_creat_account"
+                android:text="Adicionar Voluntário"
+                android:textColor="#ffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

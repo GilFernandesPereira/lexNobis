@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/imgMenu"
+            android:icon="@drawable/ic_action_voltarmenu"
+            android:title="Menu Principal" />
+        <item
+            android:id="@+id/imgPerfil"
+            android:icon="@drawable/ic_action_utilizador"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/imgEventos"
+            android:icon="@drawable/ic_action_eventos"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/imgProcurar"
+            android:icon="@drawable/ic_action_search"
+            android:title="Alterar Password" />
+        <item
+            android:id="@+id/imgDefenicao"
+            android:icon="@drawable/ic_action_defenicoes"
+            android:title="Defenições" />
+        <item
+            android:id="@+id/imgTerminarSessao"
+            android:icon="@drawable/ic_action_terminarsessao"
+            android:title="Terminar Sessão" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "732904564499",
+    "firebase_url": "https://tese-ipca-solidao-10933.firebaseio.com",
+    "project_id": "tese-ipca-solidao-10933",
+    "storage_bucket": "tese-ipca-solidao-10933.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732904564499:android:5710df162440c0a5",
+        "android_client_info": {
+          "package_name": "com.example.gifpe.projetosolidao10933"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732904564499-40ja163uh8sga5l5mbokgutl5ine33ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gifpe.projetosolidao10933",
+            "certificate_hash": "a91f7cd228a31bc9295534381c18b2063be060fe"
+          }
+        },
+        {
+          "client_id": "732904564499-4hlaq5ki73fpeb04qii173isnethm8a4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwY9dD3xeDaR97nr82YdNwwuUH-jkmKsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732904564499-4hlaq5ki73fpeb04qii173isnethm8a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732904564499:android:2a72cd7c3e07df99",
+        "android_client_info": {
+          "package_name": "com.example.gifpe.projetosolidao10933instituicao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732904564499-f8sufncq0kfhqgs8kke4a80kbbbgpvkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gifpe.projetosolidao10933instituicao",
+            "certificate_hash": "a91f7cd228a31bc9295534381c18b2063be060fe"
+          }
+        },
+        {
+          "client_id": "732904564499-4hlaq5ki73fpeb04qii173isnethm8a4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwY9dD3xeDaR97nr82YdNwwuUH-jkmKsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732904564499-4hlaq5ki73fpeb04qii173isnethm8a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
