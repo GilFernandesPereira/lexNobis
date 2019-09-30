@@ -62,3 +62,5 @@ Após a sua instalação, a instiutição já pode utilizar a aplicação.
 ---
 
 ### Aplicação para os Seniores
+
+https://github.com/GilFernandesPereira/lexNobis/blob/master/lexNobis-Seniores/Procedimentos%20para%20a%20instala%C3%A7%C3%A3o
