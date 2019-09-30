@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lexNobis-Animador</string>
+    <string-array name="genero">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string name="google_maps_key">AIzaSyDRQohiuG9yTrJ6qmKEVJCp0WQAfywy4XY</string>
+</resources>
