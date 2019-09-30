@@ -11,6 +11,7 @@ PLATAFORMA DE SOFTWARE PARA PROMOÇÃO DE ATIVIDADES DE COMBATE À SOLIDÃO
    *	Leitura e interpretação de correspondência e de documentos em geral;
    *	Atividades lúdicas, culturais e informativas, tais como, dinamização de jogos, leitura de jornais e revistas;
    *	Execução de pequenas tarefas, incluindo compras, recados, marcação de consultas ou acompanhamento aos serviços de saúde.
+   
  A lista anterior, inclui as atividades de envelhecimento ativo que as instituições promovem de forma a melhorar a qualidade de vida das pessoas à medida que estas vão envelhecendo. As atividades de envelhecimento ativo também são uma forma de fazer com que as pessoas socializem e interajam entre si, sendo, por isso, uma forma de combater a solidão. Portanto, ao disponibilizar uma ferramenta para as instituições promoverem este tipo de atividades, envolvendo as pessoas que são mais suscetíveis de sofrer de solidão, estamos a combater a solidão.
  
   	GUIA PARA INSTALAÇÃO DAS PLATAFORMAS
