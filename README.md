@@ -64,13 +64,13 @@ Após a sua instalação, a instiutição já pode utilizar a aplicação.
 ### Aplicação para os Seniores
 
 Para visualizar todos os passos para proceder à instalação da aplicação para os seniores, basta pressionar o seguinte URL:
-"https://github.com/GilFernandesPereira/lexNobis/blob/master/lexNobis-Seniores/Procedimentos%20para%20a%20instala%C3%A7%C3%A3o"
+"https://github.com/GilFernandesPereira/lexNobis/blob/master/lexNobis-Seniores/Procedimentos%20para%20a%20instala%C3%A7%C3%A3o.md"
 
 ---
 
 ### Aplicação para os Animadores
 
 Para visualizar todos os passos para proceder à instalação da aplicação para os animadores, basta pressionar o seguinte URL:
-"https://github.com/GilFernandesPereira/lexNobis/blob/master/lexNobis-Animadores/Procedimentos%20para%20a%20instala%C3%A7%C3%A3o"
+"https://github.com/GilFernandesPereira/lexNobis/blob/master/lexNobis-Animadores/Procedimentos%20para%20a%20instala%C3%A7%C3%A3o.md"
 
 ---
