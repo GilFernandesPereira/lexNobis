@@ -20,3 +20,9 @@ De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se
 
 ### Aplicação para as Instituições
 
+Através do seu telemóvel, aceda a um dos browsers para aceder à Internet.
+
+
+De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexNobis" no motor de busca, tal como na figura abaixo.
+
+
