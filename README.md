@@ -31,7 +31,7 @@ Após realizar a pesquisa, será direcionado para a página. Quando o carragemen
 ![Screenshot 3](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/homePage_Github.png)
 
 Quando a página que contém a pasta do projeto carregar por completo, pressione o botão "lexNobis-Instituição".
-![Screenshot 4](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/InsidePastaGithub_Instituicao.png)
+![Screenshot 4](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/pastasGitHub_Instituicao.png)
 
 Como é possível visualizar na figura seguinte, dentro da pasta "lexNobis-Instituição" encontra-se o APK que irá permitir instalar a aplicação nas insituições. Para tal é necessário pressionar o botão "app-debug.apk".
 ![Screenshot 5](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/InsidePastaGithub_Instituicao.png)
