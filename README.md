@@ -37,7 +37,7 @@ Como é possível visualizar na figura seguinte, dentro da pasta "lexNobis-Insti
 ![Screenshot 5](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/InsidePastaGithub_Instituicao.png)
 
 De seguida, basta pressionar o botão "Download". Após pressionar o botão será exibido um aviso. Estas aplicações foram desenhadas e estruturadas para não danificar nenhum dispositivo. Para começar a transferir basta pressionar o botão "OK".
-![Screenshot 6](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/download_aviso_instituicao.png)
+![Screenshot 6](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/download%2Baviso_instituicao.png)
 
 
 ---
