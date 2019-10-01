@@ -4,7 +4,7 @@
 
 Todas as instituições poderão utilizar a plataforma web através do seguinte URL: "https://lexnobis.000webhostapp.com/lexNobis%20-%20Web/lexNobis/Api/views/index.html". 
 
-Caso a insituição já tenha criado a sua conta, basta iniciar sessão.
+Caso a instituição já tenha criado a sua conta, basta iniciar sessão.
 
 ![Screenshot 9](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/web-login.png)
 
@@ -38,7 +38,7 @@ De seguida, basta pressionar o botão "Download". Após pressionar o botão ser�
 Após terminar a transferência, será necessário abrir o ficheiro transferido para proceder à sua instalação. Tendo em conta que o telemóvel não conhece a fonte de onde foi descarregado o ficheiro, será exibido um aviso (ver figura a baixo). Terá então que carregar no botão "Definições" e de seguida, ativar o botão "Origens desconhecidas".
 ![Screenshot 7](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/insituicao_instalacao_aviso.png)
 
-Após a sua instalação, a instiutição já pode utilizar a aplicação.
+Após a sua instalação, a instituição já pode utilizar a aplicação.
 ![Screenshot 8](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Apresenta%C3%A7%C3%A3o.png)
 
 ---
