@@ -13,6 +13,7 @@ import android.text.TextWatcher;
 import android.text.format.Time;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -70,6 +71,7 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
         lvEncontros = findViewById(R.id.lvHistoricoMissoes);
         IDFINAL = getIntent().getStringExtra("IDFINAL");
         NIFAnimador = getIntent().getStringExtra("NIFAnimador");
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         objetos = new ArrayList<ObjetosListView>();
         adapter = new ObjetosListViews(getApplicationContext(), R.layout.activity_historico_missoes_itens, objetos);
