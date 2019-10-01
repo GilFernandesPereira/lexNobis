@@ -1,7 +1,5 @@
   	GUIA PARA A INSTALAÇÃO DAS PLATAFORMAS
 
-De forma a usufruir das apps e da plataforma lexNobis na sua plenitude, segue-se uma lista com todos os passos que devem ser efetuados.
-
 ### Plataforma Web para as Instituições
 
 Todas as instituições poderão utilizar a plataforma web através do seguinte URL: "https://lexnobis.000webhostapp.com/lexNobis%20-%20Web/lexNobis/Api/views/index.html". 
