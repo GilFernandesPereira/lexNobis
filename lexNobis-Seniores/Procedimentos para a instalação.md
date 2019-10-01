@@ -1,4 +1,4 @@
-  	GUIA PARA A INSTALAÇÃO DAS PLATAFORMAS
+  	GUIA PARA A INSTALAÇÃO DA APLICAÇÃO
 
 ### Aplicação para os Seniores
 
@@ -9,7 +9,7 @@ De seguida, coloque o seguinte URL: "https://github.com/GilFernandesPereira/lexN
 
 ![Screenshot 2](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/Google%20e%20Motor%20de%20Busca.png)
 
-Após realizar a pesquisa, será direcionado para a página. Quando o carragemento da página terminar, pressione o botão "View code". Será encaminhado para a pasta do projeto.
+Após realizar a pesquisa, será direcionado para a página. Quando o carregamento da página terminar, pressione o botão "View code". Será encaminhado para a pasta do projeto.
 ![Screenshot 3](https://github.com/GilFernandesPereira/lexNobis/blob/master/Imagens/homePage_Github.png)
 
 Quando a página que contém a pasta do projeto carregar por completo, pressione o botão "lexNobis-Seniores".
