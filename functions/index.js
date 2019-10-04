@@ -4,7 +4,7 @@ let admin = require('firebase-admin');
 
 admin.initializeApp(functions.config().firebase);
 
-exports.sendNotification = functions.database.ref('/ProjetoSolidao/{userID}/{pushId}').onWrite((change,context) => {
+exports.sendNotification = functions.database.ref('/ProjetoSolidao/{userID}/{estado}').onWrite((change,context) => {
 
     const receiver_id = context.params.userID;
 
