@@ -131,7 +131,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
         ivAgendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String ToSpeak = "Agendar Encontro";
+                String ToSpeak = "Agendar Missão";
                 //Toast.makeText(getApplicationContext(),ToSpeak,Toast.LENGTH_SHORT).show();
                 tts.speak(ToSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
@@ -140,7 +140,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
         ivVisualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String ToSpeak = "Visualizar Encontros";
+                String ToSpeak = "Visualizar Missões";
                 //Toast.makeText(getApplicationContext(),ToSpeak,Toast.LENGTH_SHORT).show();
                 tts.speak(ToSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
