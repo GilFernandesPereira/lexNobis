@@ -78,6 +78,11 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
         lvEncontros.setAdapter(adapter);
         etProcurarPeloEstado=findViewById(R.id.etProcurarPeloEstado);
         //endregion
+        if(IDFINAL==null){
+            Intent intent = new Intent(getApplicationContext(), Menu_Animador.class);
+            startActivity(intent);
+            Toast.makeText(getApplicationContext(),"Desculpe, verifique de novo as suas missões!", Toast.LENGTH_SHORT).show();
+        }
 
         etProcurarPeloEstado.addTextChangedListener(new TextWatcher() {
             @Override
