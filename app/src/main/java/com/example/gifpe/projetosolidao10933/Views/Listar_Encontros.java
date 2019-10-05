@@ -44,6 +44,12 @@ public class Listar_Encontros extends AppCompatActivity {
         user = mAuth.getCurrentUser();
         mUser = user.getUid();
 
+        if(idInstituicao==null) {
+            Intent intent = new Intent(Listar_Encontros.this, Menu_Paciente.class);
+            startActivity(intent);
+            Toast.makeText(getApplicationContext(),"Desculpe, verifique de novo as suas missões!",Toast.LENGTH_SHORT).show();
+        }
+
         listaEncontros = (ListView) findViewById(R.id.lvListaEncontros);
         myRef = FirebaseDatabase.getInstance().getReference().child("ProjetoSolidao/" + idInstituicao + "/" + nifSenior);
 //        final ArrayList<String> encontros = new ArrayList<>();
