@@ -1,11 +1,15 @@
 package com.example.gifpe.projetosolidao10933voluntario.Views;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.provider.Telephony;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -55,6 +59,7 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
     private ListView lvEncontros;
     private EditText etProcurarPeloEstado;
     private ArrayList<String> listNifsSeniores;
+    private ArrayList<String> novaListNifsSeniores;
     ArrayList<ObjetosListView> objetos;
     ObjetosListViews adapter;
 
@@ -65,6 +70,7 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
 
         //region Declaração de Variaveis
         listNifsSeniores= new ArrayList<>();
+        novaListNifsSeniores= new ArrayList<>();
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         mUserPhone = user.getPhoneNumber();
@@ -129,9 +135,10 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
 
     public void searchITem(String textoSearch){
         final ArrayList<ObjetosListView> listSearch= new ArrayList<ObjetosListView>();
-        for (ObjetosListView item : objetos) {
-            if ((item.getEstado().contains(textoSearch))) {
-                listSearch.add(item);
+        for (int i =0; i<objetos.size();i++) {
+            if ((objetos.get(i).getEstado().contains(textoSearch))) {
+                listSearch.add(objetos.get(i));
+                novaListNifsSeniores.add(listNifsSeniores.get(i));
             }
         }
         final ObjetosListViews adapterr = new ObjetosListViews(getApplicationContext(), R.layout.activity_historico_missoes_itens, listSearch);
@@ -145,7 +152,7 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
                 intentt.putExtra("Data", listSearch.get(i).getData());
                 intentt.putExtra("Horas", listSearch.get(i).getHoras());
                 intentt.putExtra("Estado", listSearch.get(i).getEstado());
-                intentt.putExtra("Nif", NIFParticipante);
+                intentt.putExtra("Nif", novaListNifsSeniores.get(i).toString());
                 intentt.putExtra("IDFINAL",IDFINAL);
                 intentt.putExtra("nifAnimador", NIFAnimador);
                 intentt.putExtra("dataEncontroMarcado", listSearch.get(i).getDataEncontroMarcado());

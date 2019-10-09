@@ -113,4 +113,14 @@ public class Ativar_Conta_Codigo extends AppCompatActivity implements View.OnCli
                 break;
         }
     }
+    //PAra não voltar a pagina outra vez
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(FirebaseAuth.getInstance().getCurrentUser() != null){
+            Intent intent = new Intent(getApplicationContext(), Menu_Animador.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+    }
 }
