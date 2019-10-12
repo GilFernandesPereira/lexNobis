@@ -98,14 +98,21 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                     String substr = numeroVerifica.substring(numeroVerifica.indexOf(" idInstituicao=") + 1);
                     String substrr = substr.substring(14, 42);
                     nrCompleto = mUserPhone.substring(4, 13);
-                    Log.d("!?!?!?!?!?!?!", nrCompleto);
-                    if (numeroVerifica.contains(nrCompleto)) {
-                        //Toast.makeText(getApplicationContext(),substrr,Toast.LENGTH_SHORT).show();
-                        IDFINAL = substrr;
+                    if(ds.getValue().toString().contains(nrCompleto)){
+//                        Toast.makeText(getApplicationContext(),ds.getKey().toString(),Toast.LENGTH_SHORT).show();
+                        IDFINAL=ds.getKey().toString();
                         Participante();
                         aux = true;
                         break;
                     }
+//                    Log.d("!?!?!?!?!?!?!", nrCompleto);
+//                    if (numeroVerifica.contains(nrCompleto)) {
+//                        //Toast.makeText(getApplicationContext(),substrr,Toast.LENGTH_SHORT).show();
+//                        IDFINAL = substrr;
+//                        Participante();
+//                        aux = true;
+//                        break;
+//                    }
                 }
                 if (!aux)
                     Toast.makeText(getApplicationContext(), "Não se encontra registado na plataforma!", Toast.LENGTH_SHORT).show();
