@@ -58,19 +58,28 @@ public class Menu_Animador extends AppCompatActivity implements View.OnClickList
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     numeroVerifica = ds.getValue().toString();
+//                    Toast.makeText(getApplicationContext(),ds.getKey().toString(),Toast.LENGTH_SHORT).show();
 
                     //Vai buscar o id da respetiva instituicao
                     String substr=numeroVerifica.substring(numeroVerifica.indexOf(" idInstituicao=") + 1);
                     String substrr=substr.substring(14,42);
                     nrCompleto=mUserPhone.substring(4,13);
-                    Log.d("!?!?!?!?!?!?!", nrCompleto);
-                    if(numeroVerifica.contains(nrCompleto)) {
-                        IDFINAL=substrr;
+                    if(ds.getValue().toString().contains(nrCompleto)){
+//                        Toast.makeText(getApplicationContext(),ds.getKey().toString(),Toast.LENGTH_SHORT).show();
+                        IDFINAL=ds.getKey().toString();
                         Animador();
                         BuscarNomeInst();//Envia e cria um token para os animadores.. Estar decomentado.
                         aux=true;
                         break;
                     }
+//                    Log.d("!?!?!?!?!?!?!", nrCompleto);
+//                    if(numeroVerifica.contains(nrCompleto)) {
+//                        IDFINAL=substrr;
+//                        Animador();
+//                        BuscarNomeInst();//Envia e cria um token para os animadores.. Estar decomentado.
+//                        aux=true;
+//                        break;
+//                    }
                 }
                 if(!aux) Toast.makeText(getApplicationContext(),"Surgiu um problema!",Toast.LENGTH_SHORT).show();
             }

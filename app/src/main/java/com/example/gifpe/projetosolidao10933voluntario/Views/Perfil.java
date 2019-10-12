@@ -86,14 +86,22 @@ public class Perfil extends AppCompatActivity {
                     String substr = numeroVerifica.substring(numeroVerifica.indexOf(" idInstituicao=") + 1);
                     String substrr = substr.substring(14, 42);
                     nrCompleto = mUserPhone.substring(4, 13);
-                    Log.d("!?!?!?!?!?!?!", nrCompleto);
-                    if (numeroVerifica.contains(nrCompleto)) {
-                        IDFINAL = substrr;
+                    if(ds.getValue().toString().contains(nrCompleto)){
+//                        Toast.makeText(getApplicationContext(),ds.getKey().toString(),Toast.LENGTH_SHORT).show();
+                        IDFINAL=ds.getKey().toString();
                         Animador();
                         NomeInst();
-                        aux = true;
+                        aux=true;
                         break;
                     }
+//                    Log.d("!?!?!?!?!?!?!", nrCompleto);
+//                    if (numeroVerifica.contains(nrCompleto)) {
+//                        IDFINAL = substrr;
+//                        Animador();
+//                        NomeInst();
+//                        aux = true;
+//                        break;
+//                    }
                 }
                 if (!aux)
                     Toast.makeText(getApplicationContext(), "Surgiu um problema!", Toast.LENGTH_SHORT).show();
@@ -111,9 +119,6 @@ public class Perfil extends AppCompatActivity {
             public void onClick(View view) {
                 if (!condicao) {
                     etNome.setEnabled(true);
-                    etNif.setEnabled(true);
-                    etContacto.setEnabled(true);
-                    etDataNasc.setEnabled(true);
                     etMorada.setEnabled(true);
                     sp.setEnabled(true);
                     adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.genero, R.layout.support_simple_spinner_dropdown_item);
@@ -126,9 +131,9 @@ public class Perfil extends AppCompatActivity {
                     String nrTelemovel = etContacto.getText().toString().trim();
                     String nome = etNome.getText().toString().trim();
                     String morada = etMorada.getText().toString().trim();
-                    String dataNascimento = etDataNasc.getText().toString().trim();
+                    String dataDeNascimento = etDataNasc.getText().toString().trim();
                     String itemSelecionadoGenero = sp.getSelectedItem().toString();
-                    Animador animador = new Animador(nome, nrTelemovel, nif, morada, IDFINAL, itemSelecionadoGenero, dataNascimento);
+                    Animador animador = new Animador(nome, nrTelemovel, nif, morada, IDFINAL, itemSelecionadoGenero, dataDeNascimento);
                     update=new Animadores(view.getContext()).AtualizaPerfil(animador,filePath,nomeInstituicao,valueNif);
 
                     if (update) {
@@ -136,7 +141,6 @@ public class Perfil extends AppCompatActivity {
                         etNome.setEnabled(false);
                         etNif.setEnabled(false);
                         etContacto.setEnabled(false);
-                        etDataNasc.setEnabled(false);
                         etMorada.setEnabled(false);
                         sp.setEnabled(false);
                         btnEditarAnimador.setText("Editar Perfil");
@@ -175,7 +179,7 @@ public class Perfil extends AppCompatActivity {
                         animador.setNome(ds.child("nome").getValue().toString());
                         animador.setNif(ds.child("nif").getValue().toString());
                         animador.setNrTelemovel(ds.child("nrTelemovel").getValue().toString());
-                        animador.setDataNascimentos(ds.child("dataDeNascimento").getValue().toString());
+                        animador.setdataDeNascimento(ds.child("dataDeNascimento").getValue().toString());
                         animador.setSexo(ds.child("sexo").getValue().toString());
                         animador.setMorada(ds.child("morada").getValue().toString());
                         listSexo.add(animador.getSexo());
@@ -185,7 +189,7 @@ public class Perfil extends AppCompatActivity {
                         etNif.setText(animador.getNif());
                         etMorada.setText(animador.getMorada());
                         etContacto.setText(animador.getNrTelemovel());
-                        etDataNasc.setText(animador.getDataNascimentos());
+                        etDataNasc.setText(animador.getdataDeNascimento());
                         sp.setAdapter(adapter);
                         valueNif=animador.getNif();
 

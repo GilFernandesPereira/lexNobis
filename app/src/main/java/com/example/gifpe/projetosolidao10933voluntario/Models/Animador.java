@@ -22,11 +22,11 @@ public class Animador {
         this.nome = nome;
     }
 
-    public String getDataNascimentos() {
+    public String getdataDeNascimento() {
         return dataDeNascimento;
     }
 
-    public void setDataNascimentos(String dataDeNascimento) {
+    public void setdataDeNascimento(String dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
 
@@ -79,9 +79,9 @@ public class Animador {
 
     }
 
-    public Animador(String nome, String contacto, String nif, String morada, String idInstituicao, String sexo, String dataNascimentos){
+    public Animador(String nome, String contacto, String nif, String morada, String idInstituicao, String sexo, String dataDeNascimento){
         this.nome=nome;
-        this.dataDeNascimento=dataNascimentos;
+        this.dataDeNascimento=dataDeNascimento;
         this.nrTelemovel=contacto;
         this.morada=morada;
         this.nif=nif;
