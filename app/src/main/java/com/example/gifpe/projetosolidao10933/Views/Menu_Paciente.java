@@ -3,6 +3,7 @@ package com.example.gifpe.projetosolidao10933.Views;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
@@ -23,6 +24,7 @@ import com.example.gifpe.projetosolidao10933.Models.Encontro;
 import com.example.gifpe.projetosolidao10933.Models.ObjetosListView;
 import com.example.gifpe.projetosolidao10933.Models.Participante;
 import com.example.gifpe.projetosolidao10933.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -31,6 +33,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -44,7 +49,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
 
     private TextToSpeech tts;
     private ImageView ivAgendar;
-    private ImageView ivVisualizar;
+    private ImageView ivVisualizar, ivFotoAnimador;
     private static String mes, alturaDoDia, horas, alturaDoDiaBD, horasBD;
     private static int numeroDoMes, dia;
     private String falaDoUtilizador, mUserPhone, IDFINAL, NIFSenior;
@@ -52,11 +57,12 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
     private final int ID_PARA_TEXTO_MES = 101;
     private final int ID_PARA_TEXTO_DIA = 102;
     private final int ID_PARA_TEXTO_HORA = 103;
-    private TextView tvTextoFalado;
+    private TextView tvTextoFalado, tvNomeAnimador, tvDataMissao, tvHoraMissao, tvEstadoMissao, tvQuestionario;
     private FirebaseAuth mAuth;
     private FirebaseUser user;
-    private DatabaseReference ref, myRef;
+    private DatabaseReference ref, myRef, reff;
     private String nrCompleto;
+    StorageReference storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,16 +76,21 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
         myRef.setValue("Gil Pereira/ CR");
 
         tvTextoFalado = (TextView) findViewById(R.id.tvTextoFalado);
+        tvNomeAnimador=findViewById(R.id.tvNomeAnimador);
+        tvDataMissao=findViewById(R.id.tvDataMissao);
+        tvEstadoMissao=findViewById(R.id.tvEstadoMissao);
+        tvHoraMissao=findViewById(R.id.tvHoraMissao);
+        tvQuestionario=findViewById(R.id.tvQuestionario);
+        ivFotoAnimador=findViewById(R.id.ivFotoAnimador);
         findViewById(R.id.btnMarcarConsulta).setOnClickListener(this);
         findViewById(R.id.btnVerificarEncontros).setOnClickListener(this);
         findViewById(R.id.microfoneParaFalar).setOnClickListener(this);
-        findViewById(R.id.ativar).setOnClickListener(this);
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         mUserPhone = user.getPhoneNumber();
         //endregion
 
-        //region APAGAAAAAAAAAAA
+        //region Buscar informação
         ref = FirebaseDatabase.getInstance().getReference().child("Instituicoes");
         ref.addValueEventListener(new ValueEventListener() {
             boolean aux = false;
@@ -105,14 +116,6 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                         aux = true;
                         break;
                     }
-//                    Log.d("!?!?!?!?!?!?!", nrCompleto);
-//                    if (numeroVerifica.contains(nrCompleto)) {
-//                        //Toast.makeText(getApplicationContext(),substrr,Toast.LENGTH_SHORT).show();
-//                        IDFINAL = substrr;
-//                        Participante();
-//                        aux = true;
-//                        break;
-//                    }
                 }
                 if (!aux)
                     Toast.makeText(getApplicationContext(), "Não se encontra registado na plataforma!", Toast.LENGTH_SHORT).show();
@@ -131,25 +134,6 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                 if (i != TextToSpeech.ERROR) {
                     tts.setLanguage(Locale.getDefault());//new Locale("pt", "POR")
                 }
-            }
-        });
-
-        ivAgendar = (ImageView) findViewById(R.id.ivVozAgendar);
-        ivAgendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String ToSpeak = "Agendar Missão";
-                //Toast.makeText(getApplicationContext(),ToSpeak,Toast.LENGTH_SHORT).show();
-                tts.speak(ToSpeak, TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-        ivVisualizar = (ImageView) findViewById(R.id.ivVozVisualizar);
-        ivVisualizar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String ToSpeak = "Visualizar Missões";
-                //Toast.makeText(getApplicationContext(),ToSpeak,Toast.LENGTH_SHORT).show();
-                tts.speak(ToSpeak, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }
@@ -179,10 +163,10 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(getApplicationContext(), "Algo Deu Errado!", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.ativar:
-//                Intent Ativar = new Intent(Menu_Paciente.this, Ativar_conta.class);
-//                startActivity(Ativar);
-                break;
+//            case R.id.ativar:
+////                Intent Ativar = new Intent(Menu_Paciente.this, Ativar_conta.class);
+////                startActivity(Ativar);
+//                break;
         }
     }
 
@@ -308,6 +292,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                         if (agendar == true) {
                             String ToSpeak = "A missão ficou marcada para o dia" + dia + " do mês de " + mes + " às " + horas + " horas da " + alturaDoDia + "!";//O encontro ficou marcado para o dia "+dia+" do mês "+mes+" do ano "+ano+", às "+horas+" horas e "+ minutos+" minutos.
                             Toast.makeText(getApplicationContext(), "Missão marcada com sucesso!", Toast.LENGTH_SHORT).show();
+                            Participante();//
                             tts.speak(ToSpeak, TextToSpeech.QUEUE_FLUSH, null);
                         } else {
                             Toast.makeText(getApplicationContext(), "Não foi possível marcar a missão com sucesso!", Toast.LENGTH_SHORT).show();
@@ -1040,7 +1025,99 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                         participante.setMorada(ds.child("morada").getValue().toString());
                         Log.d("##############45", participante.getNif());
                         NIFSenior = participante.getNif();
+                        ListarUltimaMissao(IDFINAL, NIFSenior);//testar
                     }
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void ListarUltimaMissao(String IDinstituicao, final String NIFSenior) {
+        myRef = FirebaseDatabase.getInstance().getReference().child("ProjetoSolidao/" + IDinstituicao + "/" + NIFSenior);
+        myRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                ObjetosListView obj = new ObjetosListView();
+
+                obj.setData(dataSnapshot.child("data").getValue().toString());
+                obj.setEstado(dataSnapshot.child("estado").getValue().toString());
+                obj.setHoras(dataSnapshot.child("horas").getValue().toString());
+                obj.setDataQueFoiAgendadaMissao(dataSnapshot.getKey().toString());
+
+
+                //Carregar Foto
+                if(dataSnapshot.child("nifVoluntario").getValue() !=null) {
+                    String nifVolunt=dataSnapshot.child("nifVoluntario").getValue().toString();
+                    storage = FirebaseStorage.getInstance().getReference().child(nifVolunt);
+                    storage.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            Log.d("DOWNLOAD", uri.toString());
+                            Picasso.with(getApplicationContext()).load(uri.toString()).into(ivFotoAnimador);
+                        }
+                    });
+                }
+
+                if (dataSnapshot.child("voluntario").getValue() !=null){
+                    tvNomeAnimador.setText(dataSnapshot.child("voluntario").getValue().toString());
+                }else{
+                    tvNomeAnimador.setText("");
+                }
+                if (dataSnapshot.child("data").getValue() !=null){
+                    tvDataMissao.setText(dataSnapshot.child("data").getValue().toString());
+                }else{
+                    tvDataMissao.setText("Agende uma nova missão!");
+                }
+                if (dataSnapshot.child("estado").getValue() !=null){
+                    tvEstadoMissao.setText(dataSnapshot.child("estado").getValue().toString());
+                }else{
+                    tvEstadoMissao.setText("");
+                }
+                if (dataSnapshot.child("horas").getValue() !=null){
+                    tvHoraMissao.setText(dataSnapshot.child("horas").getValue().toString());
+                }else{
+                    tvHoraMissao.setText("");
+                }
+                final String dataAgendadaMissao=obj.getDataQueFoiAgendadaMissao();
+                //Teste
+                if (dataSnapshot.child("feedbackAnimador").getValue()!=null ) {
+                    if (dataSnapshot.child("feedbackSenior").getValue() != null) {
+                        tvQuestionario.setText("");//agendar nova missao
+                    } else {
+                        tvQuestionario.setText("Questionário disponível");
+                        tvQuestionario.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent listar_itens_encontro = new Intent(Menu_Paciente.this, Questionario.class);
+                                listar_itens_encontro.putExtra("idDaInstituicao", IDFINAL);
+                                listar_itens_encontro.putExtra("nif", NIFSenior);
+                                listar_itens_encontro.putExtra("dataQueFoiAgendadaMissao", dataAgendadaMissao);
+                                startActivity(listar_itens_encontro);
+                            }
+                        });
+                    }
+                }else{
+                    tvQuestionario.setText("");
                 }
             }
 

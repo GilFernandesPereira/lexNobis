@@ -1,100 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f6f6f6"
     android:orientation="vertical"
-    android:background="@color/azulPrincipal"
     tools:context=".Views.Agendar_Encontro">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="139dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/teamwork" />
+        android:src="@drawable/logo_simples" />
 
-    <Button
-        android:id="@+id/btnData"
-        style="@android:style/Widget.Button"
-        android:layout_width="131dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/background_create_account"
-        android:text="Escolher Data"
-        android:textColor="#ffff"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnHora"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnHora"
-        style="@android:style/Widget.Button"
-        android:layout_width="131dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_create_account"
+                android:text="Escolher Hora"
+                android:textColor="#ffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etHora"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="72dp"
+                android:layout_weight="0"
+                android:textAlignment="center"
+                android:enabled="false"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/background_create_account"
-        android:text="Escolher Hora"
-        android:textColor="#ffff"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etData" />
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/etData"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:textColor="@color/branco"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnData"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_create_account"
+            android:text="Escolher Data"
+            android:textColor="#ffff"
+            android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/etHora"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
-        android:textColor="@color/branco"
-        app:layout_constraintBottom_toTopOf="@+id/btnMarcarEncontro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnHora"
-        app:layout_constraintTop_toBottomOf="@+id/etData"
-        app:layout_constraintVertical_bias="0.0" />
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnMarcarEncontro"
-        style="@android:style/Widget.Button"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -102,13 +111,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_weight="1"
         android:background="@drawable/background_create_account"
         android:text="Marcar Missão"
         android:textColor="#ffff"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHora" />
+        android:textSize="18sp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

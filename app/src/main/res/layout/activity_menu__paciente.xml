@@ -5,90 +5,176 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/azulPrincipal"
+    android:background="#f6f6f6"
     tools:context=".Views.Menu_Paciente">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="139dp"
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="390dp"
         android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
+        android:background="@drawable/menu_rectangulo_redondo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/teamwork" />
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
 
-    <ImageView
-        android:id="@+id/ivVozAgendar"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toStartOf="@+id/ivVozVisualizar"
-        app:layout_constraintHorizontal_bias="0.317"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/backgroud_branco"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/start" />
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/ivFotoAnimador"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvNomeAnimador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAnimador"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDataMissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Agende uma missão!"
+            android:textColor="#1ae5be"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAnimador"
+            app:layout_constraintTop_toBottomOf="@+id/tvNomeAnimador" />
+
+        <TextView
+            android:id="@+id/tvEstadoMissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAnimador"
+            app:layout_constraintTop_toBottomOf="@+id/tvHoraMissao" />
+
+        <TextView
+            android:id="@+id/tvHoraMissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAnimador"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataMissao" />
+
+        <TextView
+            android:id="@+id/tvQuestionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="19dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFotoAnimador"
+            app:layout_constraintTop_toBottomOf="@+id/tvEstadoMissao" />
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/btnMarcarConsulta"
         style="@android:style/Widget.Button"
-        android:layout_width="171dp"
-        android:layout_height="124dp"
+        android:layout_width="266dp"
+        android:layout_height="258dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:layout_weight="1"
-        android:background="@drawable/background_create_account"
-        android:text="Agendar Missão"
+        android:background="@drawable/botao_redondo"
+        android:text="+"
         android:textColor="#ffff"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnVerificarEncontros"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivVozAgendar" />
-
-    <ImageView
-        android:id="@+id/ivVozVisualizar"
-        android:layout_width="54dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:layout_marginTop="72dp"
+        android:textSize="106sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/start" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
         android:id="@+id/btnVerificarEncontros"
         style="@android:style/Widget.Button"
         android:layout_width="171dp"
         android:layout_height="124dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/background_create_account"
         android:text="Visualizar Missões"
         android:textColor="#ffff"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivVozVisualizar"
-        app:layout_constraintVertical_bias="0.0" />
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="453dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,21 +192,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_microfone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMarcarConsulta"
         app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/ativar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ativar"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="525dp" />
-
 </android.support.constraint.ConstraintLayout>
