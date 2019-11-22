@@ -1076,6 +1076,8 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                             Picasso.with(getApplicationContext()).load(uri.toString()).into(ivFotoAnimador);
                         }
                     });
+                }else{
+                    ivFotoAnimador.setImageResource(R.drawable.ic_account_circle_black_24dp);
                 }
 
                 if (dataSnapshot.child("voluntario").getValue() !=null){
