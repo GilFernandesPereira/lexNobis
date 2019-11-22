@@ -253,9 +253,12 @@ public class Historico_missoes extends AppCompatActivity implements View.OnClick
                     String estad=dataSnapshot.child("estado").getValue().toString();
                     if (estad.contains("Confirmado"))
                     {
-
+                        obj.setIvData(R.drawable.icone_estado_confirmado);
                         obj.setTvQuestionarioDisponivel("Questionário Disponível");
                     }
+                    if(estad.contains("Terminado")) obj.setIvData(R.drawable.icone_estado_terminado);
+                    if(estad.contains("Pendente")) obj.setIvData(R.drawable.icone_estado_pendente);
+
 
                     objetos.add(obj);
 

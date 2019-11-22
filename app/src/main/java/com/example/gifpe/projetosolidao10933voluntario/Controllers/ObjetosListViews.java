@@ -42,7 +42,7 @@ public class ObjetosListViews extends ArrayAdapter<ObjetosListView>{
         ImageView ivEstado = (ImageView)convertView.findViewById(R.id.ivEstado);
         ImageView ivData = (ImageView) convertView.findViewById(R.id.ivData);
 
-        ivEstado.setImageResource(R.drawable.ic_estado);
+        ivEstado.setImageResource(objetos.getIvData());
         ivData.setImageResource(R.drawable.ic_data);
 
         tvData.setText(objetos.getData());

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="106dp"
-    android:background="@color/azulPrincipal"
+    android:background="@drawable/background_hisitorico_missoes_itens"
     tools:context=".Views.Historico_missoes">
 
 
@@ -35,7 +35,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:text="2018/09/18"
-        android:textColor="@color/branco"
+        android:textColor="#000"
         app:layout_constraintBottom_toTopOf="@+id/tvQuestionarioDisponivel"
         app:layout_constraintStart_toEndOf="@+id/ivData"
         app:layout_constraintTop_toTopOf="parent"
@@ -74,7 +74,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:text="Em aberto"
-        android:textColor="@color/branco"
+        android:textColor="#000"
         app:layout_constraintBottom_toTopOf="@+id/tvQuestionarioDisponivel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -94,7 +94,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="Questionário disponível!"
-        android:textColor="@color/branco"
+        android:textColor="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

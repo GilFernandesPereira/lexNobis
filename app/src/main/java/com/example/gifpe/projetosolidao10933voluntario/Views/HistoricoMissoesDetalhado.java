@@ -40,7 +40,7 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
 
     StorageReference storage;
     private String nifParticipante, IDFINAL, dataEncontro, estadoEncontro, horasEncontro, nifAnimador, dataEncontroMarcado, moradaAnimador, codigoPostal;
-    private ImageView ivFotoPerfil;
+    private ImageView ivFotoPerfil, ivEstado;
     private TextView tvNomePaciente, tvData, tvEstado, tvHoras;
     DatabaseReference myRef, reff, refNome,refToken,refNif, refPriori;
     private Button btnConfirmar, btnRecusar;
@@ -60,6 +60,7 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
         dataEncontroMarcado=getIntent().getStringExtra("dataEncontroMarcado");
         ivFotoPerfil = findViewById(R.id.ivFotoPerfilPaciente);
         tvNomePaciente=findViewById(R.id.tvNomePaciente);
+        ivEstado=findViewById(R.id.imageView5);
         tvData=findViewById(R.id.tvData);
         tvEstado=findViewById(R.id.tvEstado);
         tvHoras=findViewById(R.id.tvHoras);
@@ -89,11 +90,13 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
         RetrieveNomePaciente();
 
         if(estadoEncontro.contains("Confirmado")){
-            btnRecusar.setVisibility(View.INVISIBLE);
-            btnConfirmar.setVisibility(View.INVISIBLE);
+            btnRecusar.setVisibility(View.GONE);
+            btnConfirmar.setVisibility(View.GONE);
         }
         if (estadoEncontro.contains("Confirmado")){
             btnConfirmar.setVisibility(View.VISIBLE);
+            ivEstado.setImageDrawable(getResources().getDrawable(R.drawable.icone_estado_confirmado));
+//            btnConfirmar.setGravity(Gravity.CENTER_HORIZONTAL);
             btnConfirmar.setText("Responder a Questionário");
             btnConfirmar.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -107,9 +110,11 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
             });
         }
         if (estadoEncontro.contains("Terminado")){
-            btnConfirmar.setVisibility(View.INVISIBLE);
-            btnRecusar.setVisibility(View.INVISIBLE);
+            ivEstado.setImageDrawable(getResources().getDrawable(R.drawable.icone_estado_terminado));
+            btnConfirmar.setVisibility(View.GONE);
+            btnRecusar.setVisibility(View.GONE);
         }
+        if(estadoEncontro.contains("Pendente")) ivEstado.setImageDrawable(getResources().getDrawable(R.drawable.icone_estado_pendente));
     }
 
     @Override
