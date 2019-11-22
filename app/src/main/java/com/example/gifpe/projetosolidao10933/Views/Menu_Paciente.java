@@ -1064,7 +1064,6 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                 obj.setHoras(dataSnapshot.child("horas").getValue().toString());
                 obj.setDataQueFoiAgendadaMissao(dataSnapshot.getKey().toString());
 
-
                 //Carregar Foto
                 if(dataSnapshot.child("nifVoluntario").getValue() !=null) {
                     String nifVolunt=dataSnapshot.child("nifVoluntario").getValue().toString();
