@@ -54,13 +54,15 @@
     <Button
         android:id="@+id/btnInformacaoPaciente"
         style="@android:style/Widget.Button"
-        android:layout_width="146dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/background_button"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
         android:text="Informação"
         android:textColor="@color/branco"
         android:textSize="16dp"
@@ -76,6 +78,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/ic_data"
+        app:layout_constraintEnd_toStartOf="@+id/tvData"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInformacaoPaciente" />
 
@@ -83,14 +87,16 @@
         android:id="@+id/tvData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:text="24/04/2019"
         android:textColor="@color/branco"
         android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/btnInformacaoPaciente" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -100,6 +106,8 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/ic_estado"
+        app:layout_constraintEnd_toStartOf="@+id/tvEstado"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvData"
         app:layout_constraintTop_toBottomOf="@+id/btnInformacaoPaciente" />
 
@@ -111,23 +119,24 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
         android:text="Pendente"
         android:textColor="@color/branco"
         android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/btnInformacaoPaciente" />
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="48dp"
         android:layout_height="42dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginStart="136dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/ic_hora"
+        app:layout_constraintEnd_toStartOf="@+id/tvHoras"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -135,14 +144,17 @@
         android:id="@+id/tvHoras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
         android:text="18:00h"
         android:textColor="@color/branco"
         android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/tvData" />
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
     <Button
         android:id="@+id/btnAceitarMissao"
@@ -150,14 +162,16 @@
         android:layout_width="163dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_accept"
         android:text="Confirmar Missão"
         android:textColor="@color/branco"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRecusarMissao"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:layout_constraintVertical_bias="1.0" />
@@ -178,7 +192,7 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnAceitarMissao" />
 
     <RelativeLayout
