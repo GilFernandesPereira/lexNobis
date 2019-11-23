@@ -1054,7 +1054,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
 
     public void ListarUltimaMissao(String IDinstituicao, final String NIFSenior) {
         myRef = FirebaseDatabase.getInstance().getReference().child("ProjetoSolidao/" + IDinstituicao + "/" + NIFSenior);
-        myRef.addChildEventListener(new ChildEventListener() {
+        myRef.limitToLast(1).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 ObjetosListView obj = new ObjetosListView();
