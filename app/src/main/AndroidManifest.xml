@@ -15,21 +15,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.Ativar_conta" />
-        <activity android:name=".Views.Agendar_Encontro" />
-        <activity android:name=".Views.Listar_Encontros" />
+        <activity android:name=".Views.Ativar_conta" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Agendar_Encontro" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Listar_Encontros" android:screenOrientation="portrait"/>
         <activity android:name=".Views.Listar_Itens_Encontros" />
         <activity android:name=".Views.confirmacaoAgendarEncontro" />
-        <activity android:name=".Views.Menu_Paciente" />
-        <activity android:name=".Views.Ativar_Conta_Codigo" />
-        <activity android:name=".Views.Apresentacao">
+        <activity android:name=".Views.Menu_Paciente" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Ativar_Conta_Codigo" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Apresentacao" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Views.Questionario"></activity>
+        <activity android:name=".Views.Questionario" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
