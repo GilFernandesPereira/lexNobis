@@ -23,26 +23,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <activity android:name=".Views.Apresentacao">
+        <activity android:name=".Views.Apresentacao" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Views.Ativar_Conta" />
-        <activity android:name=".Views.Ativar_Conta_Codigo" />
-        <activity android:name=".Views.Menu_Animador" />
-        <activity android:name=".Views.Perfil" />
-        <activity android:name=".Views.Historico_missoes" />
-        <activity android:name=".Views.HistoricoMissoesDetalhado" />
+        <activity android:name=".Views.Ativar_Conta" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Ativar_Conta_Codigo" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Menu_Animador" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Perfil" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.Historico_missoes" android:screenOrientation="portrait"/>
+        <activity android:name=".Views.HistoricoMissoesDetalhado" android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity android:name=".Views.fragment_google_maps" />
-        <activity android:name=".Views.Questionario"></activity>
+        <activity android:name=".Views.Questionario" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

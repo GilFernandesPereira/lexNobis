@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/layer_1" />
+        app:srcCompat="@drawable/logo_final" />
 
     <TextView
         android:id="@+id/textView3"
@@ -34,7 +34,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="23dp"
         android:gravity="center"
-        android:text="Introduza o número de Telemóvel do Sénior para ativar a conta"
+        android:text="Introduza o número de Telemóvel  para ativar a conta"
         android:textColor="#707070"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
