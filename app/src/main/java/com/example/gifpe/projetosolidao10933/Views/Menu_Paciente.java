@@ -263,7 +263,12 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
                     //String pergunta="O encontro ficou marcado para o dia"+ dia +" do mês" +mes+ "às "+horas+" horas da "+ alturaDoDia + "!";
                     //tts.speak(pergunta, TextToSpeech.QUEUE_FLUSH, null);
 
-                    dataDoEncontro = dia + "/" + numeroDoMes + "/" + Calendar.getInstance().get(Calendar.YEAR);
+                    if(numeroDoMes==1)
+                    {
+                        dataDoEncontro = dia + "/" + numeroDoMes + "/" + "2020";
+                    }else {
+                        dataDoEncontro = dia + "/" + numeroDoMes + "/" + Calendar.getInstance().get(Calendar.YEAR);
+                    }
                     horaDoEncontro = horasBD + " " + alturaDoDiaBD;
 
                     //region Verifica se está antes do dia atual
@@ -325,7 +330,7 @@ public class Menu_Paciente extends AppCompatActivity implements View.OnClickList
             String pergunta = "Voçe pretende agendar uma missão?";
             tts.speak(pergunta, TextToSpeech.QUEUE_FLUSH, null);
             alertDialog();
-        } else if ((falaDoUtilizador.contains("visualizar")) || (falaDoUtilizador.contains("mostar")) || (falaDoUtilizador.contains("marcados")) || (falaDoUtilizador.contains("listar")) || (falaDoUtilizador.contains("eventos")) || (falaDoUtilizador.contains("ver")) || (falaDoUtilizador.contains("verificar")) || (falaDoUtilizador.contains("quais")) || (falaDoUtilizador.contains("Ver"))) {
+        } else if ((falaDoUtilizador.contains("Gil 10"))) {
             Intent ListarEncontro = new Intent(Menu_Paciente.this, Listar_Encontros.class);
             ListarEncontro.putExtra("idDaInstituicao", IDFINAL);
             ListarEncontro.putExtra("nif", NIFSenior);
