@@ -95,9 +95,10 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
         }
         if (estadoEncontro.contains("Confirmado")){
             btnConfirmar.setVisibility(View.VISIBLE);
+            btnRecusar.setVisibility(View.VISIBLE);
             ivEstado.setImageDrawable(getResources().getDrawable(R.drawable.icone_estado_confirmado));
-//            btnConfirmar.setGravity(Gravity.CENTER_HORIZONTAL);
             btnConfirmar.setText("Responder a Questionário");
+            btnRecusar.setText("Cancelar missão");
             btnConfirmar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -130,7 +131,7 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
                 reff.setValue("Confirmado").addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(getApplicationContext(),"Missão Confirmada com Sucesso!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Missão confirmada com sucesso!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Menu_Animador.class);
                         startActivity(intent);
                     }
@@ -149,7 +150,7 @@ public class HistoricoMissoesDetalhado extends AppCompatActivity implements View
                         refNome.removeValue();
                         refNif.removeValue();
                         refToken.removeValue();
-                        Toast.makeText(getApplicationContext(),"Missão Recusada com Sucesso!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Missão recusada com sucesso!", Toast.LENGTH_SHORT).show();
 //                        FirebaseDatabase.getInstance().getReference().child("ProjetoSolidao/" + IDFINAL + "/" + nifParticipante + "/" + dataEncontroMarcado + "/nifVoluntario").removeValue();
                         Intent intent = new Intent(getApplicationContext(), Menu_Animador.class);
                         startActivity(intent);
