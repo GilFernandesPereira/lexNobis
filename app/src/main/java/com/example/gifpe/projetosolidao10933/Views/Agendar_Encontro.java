@@ -91,7 +91,7 @@ public class Agendar_Encontro extends AppCompatActivity implements View.OnClickL
                     public void onTimeSet(TimePicker timePicker, int hourOfDay, int Minute) {
                         etHora.setText(hourOfDay + ":" + Minute);
                     }
-                }, horas, minutos, false);
+                }, horas, minutos, true);
                 timePickerDialog.show();
                 break;
             case R.id.btnMarcarEncontro:
